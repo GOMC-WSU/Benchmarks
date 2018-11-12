@@ -1,0 +1,267 @@
+Info: GOMC Version 2.31
+Info: Start Time: Wed Oct 24 17:12:57 2018
+Info: Host Name: acc5.grid.wayne.edu
+CPU information:
+Info: Total number of CPUs: 12
+Info: Total number of CPUs available: 12
+Info: Model name: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz
+Info: System name: Linux
+Info: Release: 2.6.32-696.30.1.el6.x86_64
+Info: Version: #1 SMP Tue May 22 03:28:18 UTC 2018
+Info: Kernel Architecture: x86_64
+Info: Total Ram: 64455.2MB
+Info: Used Ram: 3574.9MB
+Info: Working in the current directory: /wsu/home/fe/fe18/fe1855/projects/timing_GOMC_paper_review/final_run/gomc-IRMOF-Ewald-off/10k/run1
+Info: GOMC COMPILED TO RUN GRAND CANONICAL ENSEMBLE.
+Info: Number of threads                  1 
+
+Reading Input File:                      in.conf
+Info: Random seed                        Active 
+Info: PARAMETER file: EXOTIC format!
+Info: Input Temperature                  208.0000 K
+Info: Non-truncated potential            Active 
+Info: Long Range Correction              Inactive 
+Info: Cutoff                             25.0000 A
+Info: Short Range Cutoff                 0.7500 A
+Info: Exclude                            ONE-FOUR 
+Warning: Modified 1-4 VDW parameters will be ignored!
+Info: Ewald Summation Tolerance          1.000E-06 
+Info: Pressure calculation               Inactive 
+Info: Total number of steps              84670 
+Info: Number of equilibration steps      1000 
+Info: Move adjustment frequency          1000 
+Info: Displacement move frequency        0.2500 
+Info: Rotation move frequency            0.2500 
+Info: Molecule swap move frequency       0.5000 
+Info: CBMC First atom trials             4    
+Info: CBMC Secondary atom trials         3    
+Info: CBMC Angle trials                  1    
+Info: CBMC Dihedral trials               1    
+Info: Fugacity                           CO2    0.0998 bar
+Info: Fugacity                           C1     0.0000 bar
+Info: Fugacity                           C2     0.0000 bar
+Info: Fugacity                           C3     0.0000 bar
+Info: Fugacity                           O1     0.0000 bar
+Info: Fugacity                           O2     0.0000 bar
+Info: Fugacity                           ZN1    0.0000 bar
+Info: Fugacity                           H3     0.0000 bar
+Info: Output name                        CO2_IRMOF_1 
+Info: Coordinate frequency               1000000 
+Info: Restart frequency                  1000000 
+Info: Console output frequency           100000 
+Info: Average output frequency           100000 
+Info: Histogram output frequency         1000 
+Info: Histogram sample frequency         1000 
+Warning: Unknown input OutVolume!
+Default: Intra-Swap move frequency       0.0000 
+Default: Regrowth move frequency         0.0000 
+Warning: 1-4 Electrostatic scaling set, but will be ignored.
+Warning: Long Range Correction is Inactive for Non-truncated potential.
+Finished Reading Input File:             in.conf
+
+Reading from EXOTIC-Style parameter file:  	../../common/Parameters.inp
+Reading BONDS parameters.
+Reading ANGLES parameters.
+Reading DIHEDRALS parameters.
+Reading NONBONDED_MIE parameters.
+Reading NBFIX_MIE parameters.
+Finished reading EXOTIC-Style parameter file:  	../../common/Parameters.inp
+Reading from box 0 PDB coordinate file:  	../../common/START_IRMOF_1_BOX_0.pdb
+Finished reading box 0 PDB coordinate file:  	../../common/START_IRMOF_1_BOX_0.pdb
+Reading from box 1 PDB coordinate file:  	../../common/START_Resv_BOX_1.pdb
+Finished reading box 1 PDB coordinate file:  	../../common/START_Resv_BOX_1.pdb
+Random number seed: 2079074254
+
+Molecules in PSF:
+Molecule Kind: C1
+Idx	name	type	charge	mass
+0	C1	C	0.5580	12.0110
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Molecule Kind: C2
+Idx	name	type	charge	mass
+0	C2	C	0.1060	12.0110
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Molecule Kind: C3
+Idx	name	type	charge	mass
+0	C3	C	-0.1670	12.0110
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Molecule Kind: CO2
+Idx	name	type	charge	mass
+0	O1	OC	-0.3500	15.9994
+1	C	CO	0.7000	12.0110
+2	O2	OC	-0.3500	15.9994
+
+Bonds:
+[0 1] [1 2] 
+
+Angles:
+[0 1 2] 
+
+Dihedrals:
+
+Molecule Kind: H3
+Idx	name	type	charge	mass
+0	H3	H	0.1620	1.0079
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Molecule Kind: O1
+Idx	name	type	charge	mass
+0	O1	O	-1.5640	15.9994
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Molecule Kind: O2
+Idx	name	type	charge	mass
+0	O2	O	-0.6410	15.9994
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Molecule Kind: ZN1
+Idx	name	type	charge	mass
+0	ZN1	ZN	1.3330	65.3800
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Bonds parameter:
+Atom Types                    Kb(K)                b0(A) 
+OC  CO                          FIX               1.1600 
+
+Angles parameter:
+Atom Types                Ktheta(K)       theta0(degree) 
+OC  CO  OC                      FIX             180.0000 
+
+Dihedrals parameter:
+Atom Types                  Kchi(K)    n   delta(degree) 
+
+NonBonded 1-4 parameters:
+Type1  Type2             Epsilon(K)    Sigma(A)       N 
+ZN     ZN                    0.0000      0.0000   12.00 
+ZN     C                     0.0000      0.0000   12.00 
+ZN     O                     0.0000      0.0000   12.00 
+ZN     H                     0.0000      0.0000   12.00 
+ZN     OC                   46.7800      3.5500   12.00 
+ZN     CO                   27.3500      3.4200   12.00 
+C      C                     0.0000      0.0000   12.00 
+C      O                     0.0000      0.0000   12.00 
+C      H                     0.0000      0.0000   12.00 
+C      OC                   61.5100      3.2600   12.00 
+C      CO                   35.9600      3.3200   12.00 
+O      O                     0.0000      0.0000   12.00 
+O      H                     0.0000      0.0000   12.00 
+O      OC                   61.7000      3.0400   12.00 
+O      CO                   36.0700      2.9200   12.00 
+H      H                     0.0000      0.0000   12.00 
+H      OC                   24.5900      2.9500   12.00 
+H      CO                   14.3800      2.8200   12.00 
+OC     OC                   79.0000      3.0500   12.00 
+OC     CO                   46.1800      2.9300   12.00 
+CO     CO                   27.0000      2.8000   12.00 
+
+NonBonded parameters:
+Type1  Type2             Epsilon(K)    Sigma(A)       N 
+ZN     ZN                    0.0000      0.0000   12.00 
+ZN     C                     0.0000      0.0000   12.00 
+ZN     O                     0.0000      0.0000   12.00 
+ZN     H                     0.0000      0.0000   12.00 
+ZN     OC                   46.7800      3.5500   12.00 
+ZN     CO                   27.3500      3.4200   12.00 
+C      C                     0.0000      0.0000   12.00 
+C      O                     0.0000      0.0000   12.00 
+C      H                     0.0000      0.0000   12.00 
+C      OC                   61.5100      3.2600   12.00 
+C      CO                   35.9600      3.3200   12.00 
+O      O                     0.0000      0.0000   12.00 
+O      H                     0.0000      0.0000   12.00 
+O      OC                   61.7000      3.0400   12.00 
+O      CO                   36.0700      2.9200   12.00 
+H      H                     0.0000      0.0000   12.00 
+H      OC                   24.5900      2.9500   12.00 
+H      CO                   14.3800      2.8200   12.00 
+OC     OC                   79.0000      3.0500   12.00 
+OC     CO                   46.1800      2.9300   12.00 
+CO     CO                   27.0000      2.8000   12.00 
+
+Info: Box  0:  Periodic Cell Basis 1     51.665   0.000   0.000 
+Info: Box  0:  Periodic Cell Basis 2      0.000  51.665   0.000 
+Info: Box  0:  Periodic Cell Basis 3      0.000   0.000  51.665 
+
+Info: Box  1:  Periodic Cell Basis 1     60.000   0.000   0.000 
+Info: Box  1:  Periodic Cell Basis 2      0.000  60.000   0.000 
+Info: Box  1:  Periodic Cell Basis 3      0.000   0.000  60.000 
+
+Minimum coordinates in box 0: x =    0.687, y =    0.687, z =    0.687
+Maximum coordinates in box 0: x =   50.978, y =   50.978, z =   50.978
+Wrapping molecules inside the simulation box 0:
+Minimum coordinates in box 1: x =    0.977, y =    0.973, z =    0.935
+Maximum coordinates in box 1: x =   60.025, y =   60.069, z =   60.029
+Wrapping molecules inside the simulation box 1:
+
+################################################################################
+########################## INITIAL SIMULATION ENERGY ###########################
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+ENER_0:        0          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+
+ENER_1:        0          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+
+STITLE:     STEP        TOTALMOL     MOLFRAC_ZN1      MOLFRAC_C1      MOLFRAC_C2      MOLFRAC_C3      MOLFRAC_O1      MOLFRAC_O2      MOLFRAC_H3     MOLFRAC_CO2     TOT_DENSITY
+
+STAT_0:        0            3392        0.075472        0.113208        0.113208        0.226415        0.018868        0.226415        0.226415        0.000000        593.2912
+
+STAT_1:        0            2500        0.000000        0.000000        0.000000        0.000000        0.000000        0.000000        0.000000        1.000000        845.8334
+
+################################################################################
+############################# STARTING SIMULATION ##############################
+
+MTITLE:     STEP          DISTRY       DISACCEPT      DISACCEPT%          DISMAX          ROTATE       ROTACCEPT      ROTACCEPT%          ROTMAX       INTRASWAP       INTACCEPT      INTACCEPT%        REGROWTH    REGROWACCEPT   REGROWACCEPT%        TRANSFER      TRANACCEPT     TRANACCEPT%
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+STITLE:     STEP        TOTALMOL     MOLFRAC_ZN1      MOLFRAC_C1      MOLFRAC_C2      MOLFRAC_C3      MOLFRAC_O1      MOLFRAC_O2      MOLFRAC_H3     MOLFRAC_CO2     TOT_DENSITY
+
+Printed combined psf to file CO2_IRMOF_1_merged.psf
+Simulation Time (total): 126.9098 sec.
+Displacement:                     23.4060 sec.
+Rotation:                         23.6372 sec.
+Intra-Swap:                        0.0000 sec.
+Regrowth:                          0.0000 sec.
+Molecule-Transfer:                78.6364 sec.
+Info: GOMC Version 2.31
+Info: Completed at: Wed Oct 24 17:15:07 2018
+Info: On hostname: acc5.grid.wayne.edu

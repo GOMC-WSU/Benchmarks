@@ -1,0 +1,151 @@
+########################
+#Control file for Argon adsorption in IRMOF-1 MOF
+########################
+
+############################################################################
+#  ========-------------------- INPUT --------------------------===========
+############################################################################
+
+#########################
+# enable, step
+#########################
+Restart	 	false   
+
+####################################
+# kind {RESTART, RANDOM, INTSEED}
+####################################
+PRNG		RANDOM
+
+####################################
+# FORCE FIELD
+####################################
+ParaTypeEXOTIC true
+Parameters 	../../common/Parameters.inp
+
+####################################
+# INPUT PDB FILES
+####################################
+Coordinates 0   ../../common/START_IRMOF_1_BOX_0.pdb
+Coordinates 1  	../../common/START_Resv_BOX_1.pdb
+
+####################################
+# INPUT PSF FILES
+####################################
+Structure 0  	../../common/START_IRMOF_1_BOX_0.psf
+Structure 1  	../../common/START_Resv_BOX_1.psf
+
+
+
+############################################################################
+#  =======--------------------- SYSTEM --------------------------===========
+############################################################################
+
+#############################
+# SIMULATION CONDITION   
+#############################
+Temperature     208
+Potential       VDW 
+LRC		false  
+Rcut		10.0
+RcutLow		0.75
+Exclude 	1-4 
+
+#############################
+# ELECTROSTATIC   
+#############################
+ElectroStatic   true
+Ewald           true
+Tolerance       0.000001
+
+
+###############################                                                
+# PRESSURE CALCULATION                                                         
+################################                                               
+PressureCalc  false
+
+################################
+# STEPS 
+################################
+RunSteps           16617035
+EqSteps		   1000
+AdjSteps	   1000
+
+################################
+# MOVE FREQUENCY              
+################################
+DisFreq               0.25
+RotFreq		      0.25
+SwapFreq	      0.50
+
+
+################################
+# BOX DIMENSION #, X, Y, Z
+################################
+CellBasisVector1  0  51.6646 0.0 0.0
+CellBasisVector2  0  0.0 51.6646 0.0
+CellBasisVector3  0  0.0  0.0  51.6646
+
+CellBasisVector1  1    60.00  0.00  0.00
+CellBasisVector2  1    0.00  60.00  0.00
+CellBasisVector3  1    0.00  00.00 60.00
+
+
+##############################
+# CBMC TRIALS
+##############################
+CBMC_First   8
+CBMC_Nth     6
+CBMC_Ang     1
+CBMC_Dih     1
+
+####################################
+#          Mol. Name     Chem. Pot.
+####################################
+Fugacity CO2	0.496211934
+Fugacity C1	0
+Fugacity C2	0
+Fugacity C3	0
+Fugacity O1	0
+Fugacity O2	0
+Fugacity ZN1	0
+Fugacity H3	0
+
+
+############################################################################
+#  =======-------------------- OUTPUT --------------------------===========
+############################################################################
+
+##########################
+# statistics filename add
+##########################
+OutputName CO2_IRMOF_1
+
+#####################################
+# enable, frequency           
+#####################################
+CoordinatesFreq    true   1000000 
+RestartFreq  	   true   1000000 
+ConsoleFreq        true   100000 
+BlockAverageFreq   true   100000 
+HistogramFreq      true   100000
+
+
+################################
+# OutHistSettings
+################################
+DistName	 dis
+HistName	 his
+RunNumber	 1
+RunLetter	 a
+SampleFreq	 1000
+
+##################################
+# enable: blk avg., fluct.
+##################################
+OutEnergy         true    true   
+OutPressure       false   false 
+OutMolNum         true    true   
+OutDensity        true    true
+OutVolume         true    true
+
+

@@ -1,0 +1,17 @@
+#PBS -q accq
+#PBS -l select=1:ncpus=1:mem=8gb:cpu_speed=2.4
+#PBS -j oe
+#PBS -m abe
+#PBS -M fe1855@wayne.edu
+
+echo Running on host `hostname`
+echo Time is `date`
+
+cd /wsu/home/fe/fe18/fe1855/projects/timing_GOMC_paper_review/final_run/gomc-IRMOF-Ewald-off/70k/run1
+echo Directory is `pwd`
+
+module load intel-16/compiler
+
+# Run job
+
+./GOMC_CPU_GCMC +p1 in.conf > out.log
