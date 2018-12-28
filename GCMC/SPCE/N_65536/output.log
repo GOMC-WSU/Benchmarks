@@ -1,0 +1,215 @@
+Info: GOMC Version 2.11
+Info: Start Time: Wed Oct 11 17:41:43 2017
+Info: Host Name: smt1.grid.wayne.edu
+CPU information:
+Info: Total number of CPUs: 20
+Info: Total number of CPUs available: 20
+Info: Model name: Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
+Info: System name: Linux
+Info: Release: 2.6.32-696.6.3.el6.x86_64
+Info: Version: #1 SMP Wed Jul 12 14:17:22 UTC 2017
+Info: Kernel Architecture: x86_64
+Info: Total Ram: 129165.1MB
+Info: Used Ram: 4748.8MB
+Info: Working in the current directory: /wsu/home/fe/fe18/fe1855/timing_Sep_2017/GCMC/SPCE/N_65536
+Info: GOMC COMPILED TO RUN GRAND CANONICAL ENSEMBLE.
+Info: Number of threads                  1 
+
+Reading Input File:                      in.conf
+Info: Restart simulation                 Active 
+Info: Constant seed                      Active 
+Info: PARAMETER file: EXOTIC format!
+Info: Input Temperature                  580.0000 K
+Info: Non-truncated potential            Active 
+Info: Long Range Correction              Active 
+Info: Cutoff                             10.0000 A
+Info: Short Range Cutoff                 1.0000 A.
+Info: Exclude                            ONE-FOUR 
+Warning: Modified 1-4 VDW parameters will be ignored!
+Info: Ewald Summation                    Active 
+Info: Ewald Summation Tolerance          1.000E-05 
+Info: Cache Ewald Fourier                Inactive 
+Info: Pressure calculation               Inactive 
+Info: Total number of steps              100000 
+Info: Number of equilibration steps      100 
+Info: Move adjustment frequency          100 
+Info: Displacement move frequency        0.2000 
+Info: Rotation move frequency            0.2000 
+Info: Molecule swap move frequency       0.6000 
+Info: Simulation dimension of box        0: 140.8250 140.8250 140.8250 
+Info: Simulation dimension of box        1: 140.8250 140.8250 140.8250 
+Info: Chemical potential                 SPCE   -4210.0000 K
+Info: Output name                        GCMC_SPCE_TIME 
+Info: Printing coordinate                Inactive 
+Info: Printing restart coordinate        Inactive 
+Info: Console output frequency           10000 
+Info: Average output                     Inactive 
+Info: Histogram output                   Inactive 
+Info: Histogram sample frequency         200 
+Default: Intra-Swap move frequency       0.0000 
+Finished Reading Input File:             in.conf
+
+Reading from EXOTIC Parameter File:     ./Par_SPCE_Mie.inp
+Finished reading EXOTIC Parameter File:     ./Par_SPCE_Mie.inp
+Reading from box 1 PDB coordinate file:     ./GCMC_SPCE_TIME_BOX_0_restart.pdb
+Finished reading box 1 PDB coordinate file:     ./GCMC_SPCE_TIME_BOX_0_restart.pdb
+Reading from box 2 PDB coordinate file:     ./GCMC_SPCE_TIME_BOX_1_restart.pdb
+Finished reading box 2 PDB coordinate file:     ./GCMC_SPCE_TIME_BOX_1_restart.pdb
+Random number seed: 150
+
+Molecules in PSF:
+Molecule Kind: SPCE
+Idx	name	type	charge	mass
+0	H1	HT	0.4238	1.0080
+1	OH	OT	-0.8476	15.9994
+2	H2	HT	0.4238	1.0080
+
+Bonds:
+[0 1] [1 2] 
+
+Angles:
+[0 1 2] 
+
+Dihedrals:
+
+Bonds parameter:
+Atom Types                    Kb(K)                b0(A) 
+HT  OT                          FIX               1.0000 
+
+
+Angles parameter:
+Atom Types                Ktheta(K)       theta0(degree) 
+HT  OT  HT                      FIX             109.4700 
+
+
+Dihedrals parameter:
+Atom Types                  Kchi(K)    n   delta(degree) 
+
+Minimum coordinates in box 1: x =   -1.251, y =   -1.214, z =   -0.928
+Maximum coordinates in box 1: x =  142.333, y =  142.257, z =  142.359
+Wrapping molecules inside the simulation box 1:
+Minimum coordinates in box 2: x =    0.050, y =    0.021, z =    0.045
+Maximum coordinates in box 2: x =  130.135, y =  130.132, z =  130.144
+Wrapping molecules inside the simulation box 2:
+box: 0, RecipVectors: 287741, kmax: 52
+
+################################################################################
+########################## INITIAL SIMULATION ENERGY ###########################
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+ENER_0:        0 -128696282.3547          0.0000          0.0000   45498759.0885   -1016351.0994 -173178690.3439 -148780681.6082   16879683.4200-2257810389.1117 2216532696.9561
+
+ENER_1:        0          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+
+STITLE:     STEP        TOTALMOL
+
+STAT_0:        0           65536
+
+STAT_1:        0           65536
+
+################################################################################
+############################# STARTING SIMULATION ##############################
+
+MTITLE:     STEP          DISTRY       DISACCEPT      DISACCEPT%          DISMAX          ROTATE       ROTACCEPT      ROTACCEPT%          ROTMAX       INTRASWAP       INTACCEPT      INTACCEPT%        TRANSFER      TRANACCEPT     TRANACCEPT%
+
+STITLE:     STEP        TOTALMOL
+
+Printed combined psf to file GCMC_SPCE_TIME_merged.psf
+MOVE_0:    10000            2008            1036         51.5936          0.1959            1991            1042         52.3355          1.2373               0               0          0.0000            2998             258          8.6057
+
+STAT_0:    10000           65360
+
+MOVE_1:    10000            3003              82          2.7306
+
+STAT_1:    10000           65712
+
+Steps/sec. : 35.3745
+MOVE_0:    20000            3940            2045         51.9036          0.2374            4015            2086         51.9552          1.1156               0               0          0.0000            5997             526          8.7711
+
+STAT_0:    20000           65179
+
+MOVE_1:    20000            6048             169          2.7943
+
+STAT_1:    20000           65893
+
+Steps/sec. : 35.4747
+MOVE_0:    30000            6020            3144         52.2259          0.3580            6019            3118         51.8026          0.8191               0               0          0.0000            8949             774          8.6490
+
+STAT_0:    30000           65003
+
+MOVE_1:    30000            9012             241          2.6742
+
+STAT_1:    30000           66069
+
+Steps/sec. : 35.3542
+MOVE_0:    40000            8080            4209         52.0916          0.3465            8039            4157         51.7104          0.9222               0               0          0.0000           11896            1015          8.5323
+
+STAT_0:    40000           64850
+
+MOVE_1:    40000           11985             329          2.7451
+
+STAT_1:    40000           66222
+
+Steps/sec. : 35.4285
+MOVE_0:    50000           10067            5235         52.0016          0.2760           10061            5238         52.0624          1.1874               0               0          0.0000           14952            1265          8.4604
+
+STAT_0:    50000           64671
+
+MOVE_1:    50000           14920             400          2.6810
+
+STAT_1:    50000           66401
+
+Steps/sec. : 35.3436
+MOVE_0:    60000           12079            6280         51.9911          0.4155           11980            6238         52.0701          1.3444               0               0          0.0000           18028            1504          8.3426
+
+STAT_0:    60000           64492
+
+MOVE_1:    60000           17913             460          2.5680
+
+STAT_1:    60000           66580
+
+Steps/sec. : 35.5105
+MOVE_0:    70000           14139            7344         51.9414          0.3182           14007            7288         52.0311          0.6913               0               0          0.0000           20964            1740          8.2999
+
+STAT_0:    70000           64337
+
+MOVE_1:    70000           20890             541          2.5898
+
+STAT_1:    70000           66735
+
+Steps/sec. : 35.2668
+MOVE_0:    80000           16098            8366         51.9692          0.4766           15982            8333         52.1399          1.5884               0               0          0.0000           23951            1993          8.3212
+
+STAT_0:    80000           64163
+
+MOVE_1:    80000           23969             620          2.5867
+
+STAT_1:    80000           66909
+
+Steps/sec. : 35.6268
+MOVE_0:    90000           18067            9414         52.1060          0.2972           17993            9352         51.9758          0.5642               0               0          0.0000           26962            2220          8.2338
+
+STAT_0:    90000           64015
+
+MOVE_1:    90000           26978             699          2.5910
+
+STAT_1:    90000           67057
+
+Steps/sec. : 35.3526
+MOVE_0:   100000           20060           10463         52.1585          0.3019           19933           10365         51.9992          0.7092               0               0          0.0000           30031            2468          8.2182
+
+STAT_0:   100000           63855
+
+MOVE_1:   100000           29976             787          2.6254
+
+STAT_1:   100000           67217
+
+Simulation Time (total): 2823.4618 sec.
+Info: GOMC Version 2.11
+Info: Completed at: Wed Oct 11 19:06:07 2017
+Info: On hostname: smt1.grid.wayne.edu
+Finished writing 
+Finished writing 
+Finished writing 
+Finished writing 
