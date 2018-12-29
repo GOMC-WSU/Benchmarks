@@ -1,0 +1,224 @@
+Info: GOMC Version 2.11
+Info: Start Time: Wed Oct 11 00:21:12 2017
+Info: Host Name: smt1.grid.wayne.edu
+CPU information:
+Info: Total number of CPUs: 20
+Info: Total number of CPUs available: 20
+Info: Model name: Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
+Info: System name: Linux
+Info: Release: 2.6.32-696.6.3.el6.x86_64
+Info: Version: #1 SMP Wed Jul 12 14:17:22 UTC 2017
+Info: Kernel Architecture: x86_64
+Info: Total Ram: 129165.1MB
+Info: Used Ram: 4790.1MB
+Info: Working in the current directory: /wsu/home/fe/fe18/fe1855/timing_Sep_2017/GEMC/octane/N_16384
+Info: GOMC COMPILED TO RUN GIBBS ENSEMBLE.
+Info: Number of threads                  1 
+
+Reading Input File:                      in.conf
+Info: Restart simulation                 Active 
+Info: Constant seed                      Active 
+Info: PARAMETER file: EXOTIC format!
+Info: Running NVT_GEMC
+Info: Input Temperature                  510.0000 K
+Info: Non-truncated potential            Active 
+Info: Long Range Correction              Active 
+Info: Cutoff                             10.0000 A
+Info: Short Range Cutoff                 1.0000 A.
+Info: Exclude                            ONE-FOUR 
+Warning: Modified 1-4 VDW parameters will be ignored!
+Info: Pressure calculation               Inactive 
+Info: Total number of steps              1000000 
+Info: Number of equilibration steps      100000 
+Info: Move adjustment frequency          100000 
+Info: Displacement move frequency        0.4000 
+Info: Rotation move frequency            0.4000 
+Info: Molecule swap move frequency       0.1900 
+Info: Volume move frequency              0.0100 
+Info: Intra-Swap move frequency          0.0000 
+Info: Simulation dimension of box        0: 174.2400 174.2400 174.2400 
+Info: Simulation dimension of box        1: 239.9330 239.9330 239.9330 
+Info: Output name                        GEMC_OCTANE_TIME 
+Info: Printing coordinate                Inactive 
+Info: Printing restart coordinate        Inactive 
+Info: Console output frequency           100000 
+Info: Average output                     Inactive 
+Warning: 1-4 Electrostatic scaling set, but will be ignored.
+Finished Reading Input File:             in.conf
+
+Reading from EXOTIC Parameter File:     ./Par_Mie_Alkane.inp
+Finished reading EXOTIC Parameter File:     ./Par_Mie_Alkane.inp
+Reading from box 1 PDB coordinate file:     ./GEMC_OCTANE_BOX_0_restart.pdb
+Finished reading box 1 PDB coordinate file:     ./GEMC_OCTANE_BOX_0_restart.pdb
+Reading from box 2 PDB coordinate file:     ./GEMC_OCTANE_BOX_1_restart.pdb
+Finished reading box 2 PDB coordinate file:     ./GEMC_OCTANE_BOX_1_restart.pdb
+Random number seed: 150
+
+Molecules in PSF:
+Molecule Kind: C8P
+Idx	name	type	charge	mass
+0	C1	CH3	0.0000	15.0350
+1	C2	CH2	0.0000	14.0270
+2	C3	CH2	0.0000	14.0270
+3	C4	CH2	0.0000	14.0270
+4	C5	CH2	0.0000	14.0270
+5	C6	CH2	0.0000	14.0270
+6	C7	CH2	0.0000	14.0270
+7	C8	CH3	0.0000	15.0350
+
+Bonds:
+[0 1] [1 2] [2 3] [3 4] [4 5] [5 6] [6 7] 
+
+Angles:
+[0 1 2] [1 2 3] [2 3 4] [3 4 5] [4 5 6] [5 6 7] 
+
+Dihedrals:
+[0 1 2 3] [1 2 3 4] [2 3 4 5] [3 4 5 6] [4 5 6 7] 
+
+Bonds parameter:
+Atom Types                    Kb(K)                b0(A) 
+CH3  CH2                        FIX               1.5400 
+CH2  CH2                        FIX               1.5400 
+
+
+Angles parameter:
+Atom Types                Ktheta(K)       theta0(degree) 
+CH3  CH2  CH2          31250.000000             114.0000 
+CH2  CH2  CH2          31250.000000             114.0000 
+
+
+Dihedrals parameter:
+Atom Types                  Kchi(K)    n   delta(degree) 
+CH3  CH2  CH2  CH2         0.000000    0          0.0000 
+CH3  CH2  CH2  CH2       355.029964    1          0.0000 
+CH3  CH2  CH2  CH2       -68.189775    2        180.0000 
+CH3  CH2  CH2  CH2       791.317812    3          0.0000 
+
+
+Minimum coordinates in box 1: x =   -8.364, y =   -7.628, z =   -8.489
+Maximum coordinates in box 1: x =  181.031, y =  181.291, z =  182.421
+Wrapping molecules inside the simulation box 1:
+Minimum coordinates in box 2: x =   -7.357, y =   -6.785, z =   -6.516
+Maximum coordinates in box 2: x =  247.193, y =  246.354, z =  247.327
+Wrapping molecules inside the simulation box 2:
+
+################################################################################
+########################## INITIAL SIMULATION ENERGY ###########################
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+ENER_0:        0   -2513840.1648   36844896.6904   -2714396.8760  -33234359.4705   -3409980.5087          0.0000          0.0000          0.0000          0.0000         -0.0000
+
+ENER_1:        0   10299794.6597   12661538.1249    -966435.1589   -1313674.1677     -81634.1387          0.0000          0.0000          0.0000          0.0000         -0.0000
+
+STITLE:     STEP          VOLUME        TOTALMOL     TOT_DENSITY
+
+STAT_0:        0    5289852.8010           13107        469.9987
+
+STAT_1:        0   13812425.6318            3277         45.0032
+
+################################################################################
+############################# STARTING SIMULATION ##############################
+
+MTITLE:     STEP          DISTRY       DISACCEPT      DISACCEPT%          DISMAX          ROTATE       ROTACCEPT      ROTACCEPT%          ROTMAX       INTRASWAP       INTACCEPT      INTACCEPT%        TRANSFER      TRANACCEPT     TRANACCEPT%          VOLUME       VOLACCEPT      VOLACCEPT%          VOLMAX
+
+STITLE:     STEP          VOLUME        TOTALMOL     TOT_DENSITY
+
+Printed combined psf to file GEMC_OCTANE_TIME_merged.psf
+MOVE_0:   100000           19990               8          0.0400          0.0349           20095            6269         31.1968          0.4900               0               0          0.0000            9661             912          9.4400             975             903         92.6154        926.1538
+
+STAT_0:   100000    5314353.8360           13254        473.0787
+
+MOVE_1:   100000           19878            7783         39.1538         46.9715           19779           15841         80.0900          1.2581               0               0          0.0000            9622            1059         11.0060             975             903         92.6154        926.1538
+
+STAT_1:   100000   13787924.5968            3130         43.0608
+
+Steps/sec. : 105.8862
+MOVE_0:   200000           39712           18801         47.3434          0.0664           40026           15054         37.6106          0.4320               0               0          0.0000           19123            1855          9.7004            2030            1906         93.8916       1761.0091
+
+STAT_0:   200000    5324878.6438           13313        474.2454
+
+MOVE_1:   200000           39959           15930         39.8659         38.1133           40013           30974         77.4098          1.8818               0               0          0.0000           19137            2061         10.7697            2030            1906         93.8916       1761.0091
+
+STAT_1:   200000   13777399.7890            3071         42.2814
+
+Steps/sec. : 97.2385
+MOVE_0:   300000           59801           37139         62.1043          0.1213           60051           24517         40.8270          0.4083               0               0          0.0000           28600            2650          9.2657            3071            2855         92.9665       3210.7544
+
+STAT_0:   300000    5339841.8486           13475        478.6712
+
+MOVE_1:   300000           59906           24079         40.1946         31.1411           59948           45175         75.3570          2.6810               0               0          0.0000           28623            3018         10.5440            3071            2855         92.9665       3210.7544
+
+STAT_1:   300000   13762436.5842            2909         40.0945
+
+Steps/sec. : 97.3737
+MOVE_0:   400000           79927           54005         67.5679          0.2033           80070           34298         42.8350          0.3990               0               0          0.0000           38244            3482          9.1047            4095            3739         91.3065       5543.5681
+
+STAT_0:   400000    5332575.8279           13538        481.5644
+
+MOVE_1:   400000           79707           32371         40.6125         26.0817           79826           59109         74.0473          3.1416               0               0          0.0000           38131            3913         10.2620            4095            3739         91.3065       5543.5681
+
+STAT_1:   400000   13769702.6049            2846         39.2055
+
+Steps/sec. : 97.7461
+MOVE_0:   500000          100028           68881         68.8617          0.3009          100074           44212         44.1793          0.3955               0               0          0.0000           47577            4362          9.1683            5097            4493         88.1499       8343.0147
+
+STAT_0:   500000    5328100.0108           13526        481.5418
+
+MOVE_1:   500000           99871           41171         41.2242         22.7652           99789           72970         73.1243          3.1416               0               0          0.0000           47564            4781         10.0517            5097            4493         88.1499       8343.0147
+
+STAT_1:   500000   13774178.4220            2858         39.3580
+
+Steps/sec. : 99.4319
+MOVE_0:   600000          120132           81488         67.8321          0.3774          119881           54198         45.2098          0.3988               0               0          0.0000           57097            5230          9.1599            6057            5107         84.3157      10672.1062
+
+STAT_0:   600000    5339979.8347           13598        483.0281
+
+MOVE_1:   600000          119856           49955         41.6792         20.0120          119915           86930         72.4930          3.1416               0               0          0.0000           57062            5721         10.0259            6057            5107         84.3157      10672.1062
+
+STAT_1:   600000   13762298.5981            2786         38.3996
+
+Steps/sec. : 103.6838
+MOVE_0:   700000          140256           92511         65.9587          0.4135          139491           63955         45.8488          0.3968               0               0          0.0000           66754            6033          9.0377            7128            5752         80.6958      12854.3577
+
+STAT_0:   700000    5353450.1818           13677        484.6118
+
+MOVE_1:   700000          139964           59082         42.2123         18.1668          139960          101029         72.1842          3.1416               0               0          0.0000           66447            6603          9.9372            7128            5752         80.6958      12854.3577
+
+STAT_1:   700000   13748828.2510            2707         37.3473
+
+Steps/sec. : 92.1770
+MOVE_0:   800000          160513          102988         64.1618          0.4277          159465           73801         46.2804          0.3912               0               0          0.0000           76305            6851          8.9784            8091            6218         76.8508      12440.5621
+
+STAT_0:   800000    5352297.8960           13671        484.5035
+
+MOVE_1:   800000          159873           68265         42.6995         16.7597          159916          115273         72.0835          3.1416               0               0          0.0000           75837            7415          9.7775            8091            6218         76.8508      12440.5621
+
+STAT_1:   800000   13749980.5368            2713         37.4270
+
+Steps/sec. : 101.9088
+MOVE_0:   900000          180622          113023         62.5743          0.4269          179474           83727         46.6513          0.3881               0               0          0.0000           85877            7678          8.9407            9076            6731         74.1626      12958.3926
+
+STAT_0:   900000    5343699.3500           13676        485.4606
+
+MOVE_1:   900000          179622           77392         43.0860         15.4902          179955          129409         71.9119          3.1416               0               0          0.0000           85374            8247          9.6598            9076            6731         74.1626      12958.3926
+
+STAT_1:   900000   13758579.0828            2708         37.3346
+
+Steps/sec. : 99.5440
+MOVE_0:  1000000          200574          122852         61.2502          0.4206          199444           93783         47.0222          0.3909               0               0          0.0000           95463            8440          8.8411           10127            7266         71.7488      13192.6547
+
+STAT_0:  1000000    5338662.1517           13785        489.7915
+
+MOVE_1:  1000000          199397           86520         43.3908         14.3003          200076          143629         71.7872          3.1416               0               0          0.0000           94919            9118          9.6061           10127            7266         71.7488      13192.6547
+
+STAT_1:  1000000   13763616.2811            2599         35.8188
+
+Simulation Time (total): 10139.3292 sec.
+Info: GOMC Version 2.11
+Info: Completed at: Wed Oct 11 03:10:16 2017
+Info: On hostname: smt1.grid.wayne.edu
+Finished writing 
+Finished writing 
+Finished writing 
+Finished writing 
